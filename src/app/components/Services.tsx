@@ -1,0 +1,74 @@
+"use client";
+import Image from "next/image";
+
+export default function Services() {
+  return (
+    <div className="bg-white text-black w-full py-10">
+      <div className="text-center space-y-3">
+        <h1 className="text-3xl font-semibold pb-5">Layanan Kami</h1>
+        <div className="h-1 w-32 bg-linear-to-r from-[#56EBDA] to-[#363535] mx-auto"></div>
+      </div>
+      <div className="flex justify-center items-center py-10">
+        <Image
+          src="/Services.png"
+          alt="Services"
+          width={750}
+          height={750}
+          className="object-contain"
+        />
+      </div>
+      <div className="text-center pb-10">
+        <h2 className="text-lg font-bold pb-3">Layanan PT SCID</h2>
+        <p className="text-xs text-[#575454] w-1/3 mx-auto">
+          Kami menyediakan beragam layanan berbasis IT yang disesuaikan dengan
+          kebutuhan mitra kami, antara lain:
+        </p>
+      </div>
+      <div className="grid grid-cols-2 gap-6 auto-rows-[1fr] w-11/12 mx-auto">
+        {/* CARD 1 */}
+        <div className="bg-[#8CB5B2] p-3 rounded-2xl h-full flex flex-col justify-center text-center">
+          <h3 className="font-bold pb-2 text-lg">
+            💡 Pembuatan & Instalasi Website
+          </h3>
+          <p className="text-xs text-[#353535]">
+            Mulai dari website sederhana untuk UMKM hingga sistem portal kampus.
+          </p>
+        </div>
+
+        {/* CARD 2 */}
+        <div className="bg-[#8CB5B2] p-6 rounded-2xl h-full flex flex-col justify-center text-center">
+          <h3 className="font-bold pb-2 text-lg">
+            📱 Pengembangan Aplikasi Seluler
+          </h3>
+          <p className="text-xs text-[#353535]">
+            Solusi aplikasi Android dan iOS untuk mendukung layanan digital.
+          </p>
+        </div>
+
+        {/* CARD 3 */}
+        <div className="bg-[#8CB5B2] p-6 rounded-2xl h-full flex flex-col justify-center text-center">
+          <h3 className="font-bold pb-2 text-lg">
+            🤝 Kolaborasi Riset & Pengembangan
+          </h3>
+          <p className="text-xs text-[#353535]">
+            Bekerja sama dengan perguruan tinggi di Malang dalam program riset
+            terapan, pengembangan sistem informasi, dan pendampingan teknologi.
+          </p>
+        </div>
+
+        {/* CARD 4 */}
+        <div className="bg-[#8CB5B2] p-6 rounded-2xl h-full flex flex-col justify-center text-center">
+          <h3 className="font-bold pb-2 text-lg">
+            🖥️ Pengembangan Sistem Informasi & Otomasi Bisnis
+          </h3>
+          <p className="text-xs text-[#353535]">
+            Menyediakan solusi sistem informasi terintegrasi—seperti manajemen
+            inventori, ERP ringan, sistem akademik, hingga aplikasi internal
+            perusahaan—untuk membantu mitra meningkatkan efisiensi operasional
+            dan pengambilan keputusan berbasis data.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
