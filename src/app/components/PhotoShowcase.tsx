@@ -1,66 +1,52 @@
 "use client";
 import Image from "next/image";
 
-export default function PhotoShowcaseExact() {
+export default function PhotoShowcase() {
   return (
-    <div className="relative w-[520px] h-[550px] mx-auto">
-      {/* ===== ZIG-ZAG BORDER (DIPERKECIL) ===== */}
-      <svg
-        className="absolute inset-0 w-full h-full pointer-events-none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M 45 30 H 475 V 110 H 390 V 165 H 475 V 390 H 300 V 450 H 45 V 210 H 120 V 110 H 45 Z"
-          fill="none"
-          stroke="black"
-          strokeWidth="2"
-          strokeDasharray="9 7"
-        />
-      </svg>
-
-      {/* ===== IMAGE GRID (DIPERKECIL) ===== */}
-      <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 gap-x-10 gap-y-12 px-14 pt-16">
-        {/* TOP-LEFT */}
+    <div className="relative w-[520px] h-[550px] mx-auto max-w-full">
+      {/* IMAGE GRID */}
+      <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 gap-x-10 gap-y-12 px-14 pt-16 md:gap-x-6 md:gap-y-8 md:px-10 md:pt-12 sm:gap-x-4 sm:gap-y-6 sm:px-6 sm:pt-8">
+        {/* TOP LEFT */}
         <div className="flex justify-center">
           <Image
             src="/TL.png"
             alt="TL"
             width={400}
             height={600}
-            className="object-cover w-[170px] h-60 rounded-lg"
+            className="object-cover rounded-lg w-[170px] h-60 md:w-[130px] md:h-[180px] sm:w-[120px] sm:h-[150px]"
           />
         </div>
 
-        {/* TOP-RIGHT */}
+        {/* TOP RIGHT */}
         <div className="flex justify-center">
           <Image
             src="/TR.png"
             alt="TR"
             width={400}
             height={400}
-            className="object-contain w-[180px] h-[200px]"
+            className="object-contain w-[180px] h-[200px] md:w-[140px] md:h-[150px] sm:w-[120px] sm:h-[130px]"
           />
         </div>
 
-        {/* BOTTOM-LEFT */}
+        {/* BOTTOM LEFT */}
         <div className="flex justify-center">
           <Image
             src="/BL.png"
             alt="BL"
             width={400}
             height={400}
-            className="object-contain w-[170px] h-[170px]"
+            className="object-contain w-[170px] h-[170px] md:w-[130px] md:h-[130px] sm:w-[120px] sm:h-[120px]"
           />
         </div>
 
-        {/* BOTTOM-RIGHT */}
+        {/* BOTTOM RIGHT */}
         <div className="flex justify-center">
           <Image
             src="/BR.png"
             alt="BR"
             width={400}
             height={400}
-            className="object-cover w-[180px] h-[170px] rounded-lg"
+            className="object-cover rounded-lg w-[180px] h-[170px] md:w-[140px] md:h-[130px] sm:w-[120px] sm:h-[120px]"
           />
         </div>
       </div>
