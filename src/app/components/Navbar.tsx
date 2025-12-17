@@ -62,7 +62,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto flex justify-between items-center py-4 px-6 md:px-16 text-white">
           {/* LOGO + TEXT */}
           <div className="flex items-center space-x-3">
-            <Image src="/logo.png" alt="Logo" width={40} height={40} />
+            <Image src="/icons/logo.png" alt="Logo" width={40} height={40} />
             <span className="text-sm font-semibold">
               PT Sistem Cerdas Indonesia
             </span>

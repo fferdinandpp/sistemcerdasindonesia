@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-6 py-10">
         {/* Logo */}
         <div className="flex flex-col items-center lg:items-start">
-          <Image src="/Logo2.png" alt="Logo" width={180} height={180} />
+          <Image src="/icons/logo.png" alt="Logo" width={180} height={180} />
         </div>
 
         {/* Kantor */}
